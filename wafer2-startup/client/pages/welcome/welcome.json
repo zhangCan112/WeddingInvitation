@@ -1,0 +1,6 @@
+{
+  "navigationBarBackgroundColor": "#F6F6F6",  
+  "usingComponents": {
+    "welcome": "/vendor/@xsy-customize/prm-component-welcome/welcome/welcome"
+  }
+}

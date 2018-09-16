@@ -1,0 +1,2 @@
+<!--pages/welcome/welcome.wxml-->
+<welcome swiper-class='swiper-item' imageUrls='{{images}}' autoplay='true' />

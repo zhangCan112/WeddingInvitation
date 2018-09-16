@@ -1,0 +1,5 @@
+/* vendor/@xsy-customize/prm-component-welcome/welcome/welcome.wxss */
+.swiper-default{
+  display: flex;
+  flex: 1;
+}

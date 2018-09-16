@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/index/index"        
+  ],
+  "window": {
+    "backgroundColor": "#FFFFFF",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTitleText": "CL之恋",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#97A9B8",
+    "selectedColor": "#3DA0F2",
+    "borderStyle": "#CCD6DD",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/welcome/welcome",
+        "iconPath": "imageAsset/icon_index.png",
+        "selectedIconPath": "imageAsset/icon_index_HL.png",
+        "text": "相册"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "imageAsset/icon_near_store.png",
+        "selectedIconPath": "imageAsset/icon_near_store_HL.png",
+        "text": "酒店导航"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "imageAsset/icon_me.png",
+        "selectedIconPath": "imageAsset/icon_me_HL.png",
+        "text": "我"
+      }
+    ]
+  }
+}
