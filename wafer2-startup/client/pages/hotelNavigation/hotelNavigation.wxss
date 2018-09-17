@@ -1,0 +1,6 @@
+/* client/pages/hotelNavigation/hotelNavigation.wxss */
+
+.map-view {
+  width: 100vw;
+  height: 100vh;
+}

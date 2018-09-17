@@ -1,0 +1,2 @@
+<!--client/pages/hotelNavigation/hotelNavigation.wxml-->
+<map class='map-view' markers='{{markers}}' latitude='34.352390' longitude='107.229100' bindmarkertap='markertap'  controls='{{controls}}'></map>
