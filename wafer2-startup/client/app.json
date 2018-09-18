@@ -2,7 +2,9 @@
   "pages": [
     "pages/welcome/welcome",
     "pages/index/index",
-    "pages/hotelNavigation/hotelNavigation"
+    "pages/hotelNavigation/hotelNavigation",
+    "pages/test/test",
+    "pages/bless/bless"
   ],
   "window": {
     "backgroundColor": "#FFFFFF",
@@ -30,7 +32,7 @@
         "text": "酒店导航"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/bless/bless",
         "iconPath": "imageAsset/icon_me.png",
         "selectedIconPath": "imageAsset/icon_me_HL.png",
         "text": "留下祝福"

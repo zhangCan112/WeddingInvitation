@@ -46,7 +46,7 @@ Page({
       height: 47,
       iconPath: '/imageAsset/icon_location01.png',
       callout: {
-        content: '点击导航',
+        content: '君越酒店',
         fontSize: 14,
         color: '#FFFFFF',
         bgColor: '#5BCCED',

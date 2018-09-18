@@ -14,11 +14,11 @@ Component({
     },
     interval:{
       type: Number,
-      value: 2000
+      value: 3000
     },
     duration: {
       type: Number,
-      value: 500
+      value: 1000
     },
     imageUrls:{
       type: Array,
