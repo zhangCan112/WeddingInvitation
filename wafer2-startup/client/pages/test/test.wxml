@@ -1,4 +1,5 @@
 <!--client/pages/test/test.wxml-->
+<view class='container'>
 <view class='body'>
 <view class="mao_box">
 	<view class="mao">
@@ -65,5 +66,9 @@
 			</view>
 		</view>
 	</view>
+  <view class='button-box-1'>
+    <button class='register-button' hover-class='hover-class'open-type="getUserInfo" bindgetuserinfo="getUserInfo" loading='{{isLoading}}' >{{' ' + '进去看看'}}</button>    
+  </view>
+</view>
 </view>
 </view>

@@ -4,12 +4,13 @@
     "pages/index/index",
     "pages/hotelNavigation/hotelNavigation",
     "pages/test/test",
-    "pages/bless/bless"
+    "pages/bless/bless",
+    "pages/photo/photo"
   ],
   "window": {
-    "backgroundColor": "#FFFFFF",
+    "backgroundColor": "#FFC0CB",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarBackgroundColor": "#FFC0CB",
     "navigationBarTitleText": "CL之恋",
     "navigationBarTextStyle": "black"
   },
@@ -17,10 +18,10 @@
     "color": "#97A9B8",
     "selectedColor": "#3DA0F2",
     "borderStyle": "#CCD6DD",
-    "backgroundColor": "#ffffff",
+    "backgroundColor": "#FFC0CB",
     "list": [
       {
-        "pagePath": "pages/welcome/welcome",
+        "pagePath": "pages/photo/photo",
         "iconPath": "imageAsset/icon_index.png",
         "selectedIconPath": "imageAsset/icon_index_HL.png",
         "text": "相册"

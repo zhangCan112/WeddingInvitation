@@ -1,0 +1,4 @@
+<!--pages/welcome/welcome.wxml-->
+<barrage>
+<welcome swiper-class='swiper-item' imageUrls='{{images}}' autoplay='{{true}}' indicatorDots='{{false}}'/>
+</barrage>

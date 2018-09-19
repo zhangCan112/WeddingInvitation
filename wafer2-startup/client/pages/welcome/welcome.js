@@ -1,70 +1,123 @@
-// pages/welcome/welcome.js
+// client/pages/test/test.js
+// 引入 QCloud 小程序增强 SDK
+var qcloud = require('../../vendor/wafer2-client-sdk/index');
+
+// 引入配置
+var config = require('../../config');
+
+//
+var until = require('../../utils/util.js')
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    images: [
-      'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1531317476369&di=836bbbd7f8ed2701d38e3efa8e8bc243&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01edaf5783aa0d0000018c1bb33912.jpg',
-      'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1531317476369&di=1c6b197fce27ab81b1e3c4687a9af6d6&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01957356c48ca66ac7256cb0051188.jpg',
-      'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1531317476368&di=2d0e1209e734ab275e9f8b3c803b02a7&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F018ce756026f216ac7251df8f3c713.jpg'
-    ]
+    isLoading: false,
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function(options) {
+  onLoad: function (options) {
 
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function() {
+  onReady: function () {
 
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function() {
+  onShow: function () {
 
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
-  onHide: function() {
+  onHide: function () {
 
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
-  onUnload: function() {
+  onUnload: function () {
 
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
-  onPullDownRefresh: function() {
+  onPullDownRefresh: function () {
 
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
-  onReachBottom: function() {
+  onReachBottom: function () {
 
   },
 
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function() {
+  onShareAppMessage: function () {
 
-  },  
+  },
+  /**
+ * 点击「登录」按钮，测试登录功能
+ */
+  getUserInfo: function (e) {
+    this.setData({
+      isLoading: true,
+    })
+
+    const session = qcloud.Session.get()
+
+    if (session) {
+      // 第二次登录
+      // 或者本地已经有登录态
+      // 可使用本函数更新登录态
+      qcloud.loginWithCode({
+        success: res => {
+          this.setData({ userInfo: res, logged: true, isLoading: false, })          
+          wx.reLaunch({
+            url: '/pages/photo/photo',
+          })
+        },
+        fail: err => {
+          console.error(err)
+          this.setData({
+            isLoading: false,
+          })
+          until.showModel('登录错误', err.message)
+        }
+      })
+    } else {
+      // 首次登录
+      qcloud.login({
+        success: res => {
+          this.setData({ userInfo: res, logged: true, isLoading: false, })   
+          wx.reLaunch({
+            url: '/pages/photo/photo',
+          })       
+        },
+        fail: err => {
+          console.error(err)
+          this.setData({
+            isLoading: false,
+          })
+          until.showModel('登录错误', err.message)
+        }
+      })
+    }
+  },
 })

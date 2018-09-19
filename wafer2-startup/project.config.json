@@ -4,6 +4,10 @@
 	"miniprogramRoot": "client/",
 	"qcloudRoot": "server/",
 	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
 		"newFeature": true
 	},
 	"appid": "wx5d389cfb027024bd",
@@ -28,9 +32,10 @@
 			"current": 0,
 			"list": [
 				{
-					"id": -1,
-					"name": "test",
-					"pathName": "pages/test/test"
+					"id": 0,
+					"name": "bless",
+					"pathName": "pages/bless/bless",
+					"query": ""
 				}
 			]
 		}

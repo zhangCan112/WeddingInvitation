@@ -1,2 +1,18 @@
 <!--client/pages/bless/bless.wxml-->
-<text>client/pages/bless/bless.wxml</text>
+<view class='container'>
+  <view class='cell'>
+    <text class='title'>{{'姓名'}}</text>
+    <input class='input' bindinput='inputChange' placeholder-class='placeholder-class' auto-height='true' placeholder='请输入{{title}}' value="{{text}}" type='{{keyBoardType}}'  />
+  </view>
+  <view class='sep-line'/>
+  <view class='cell'>
+    <text class='title'>{{'电话'}}</text>
+    <input class='input' bindinput='inputChange' placeholder-class='placeholder-class' auto-height='true' placeholder='请输入{{title}}' value="{{text}}" type='{{keyBoardType}}'  />
+  </view>
+  <view class='sep-line'/>
+  <view class='cell'>
+    <text class='title'>{{'人数'}}</text>
+    <input class='input' bindinput='inputChange' placeholder-class='placeholder-class' auto-height='true' placeholder='请输入{{title}}' value="{{text}}" type='{{keyBoardType}}'  />
+  </view>
+  <view class='sep-line'/>
+</view>

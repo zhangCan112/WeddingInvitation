@@ -1,0 +1,6 @@
+{  
+  "usingComponents": {
+    "welcome": "/vendor/@xsy-customize/prm-component-welcome/welcome/welcome",
+    "barrage": "/component/barrage/barrage"
+  }
+}
