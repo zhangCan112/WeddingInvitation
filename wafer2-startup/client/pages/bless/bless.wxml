@@ -1,18 +1,25 @@
 <!--client/pages/bless/bless.wxml-->
 <view class='container'>
-  <view class='cell'>
-    <text class='title'>{{'姓名'}}</text>
-    <input class='input' bindinput='inputChange' placeholder-class='placeholder-class' auto-height='true' placeholder='请输入{{title}}' value="{{text}}" type='{{keyBoardType}}'  />
+  <view class='areaContainer'>
+    <textarea class='blessArea' placeholder="一定要祝福一下张灿和豆小丽呀！" maxlength='500' auto-height='true' />    
   </view>
-  <view class='sep-line'/>
+  <view class='switchButton' bindtap='switchMethod'>{{canOnScence ? '不能亲至,亲要见谅哦=。=' : 'Hi,我要参加婚礼!'}}</view>
+  <view wx:if='{{canOnScence}}'>
+    <view class='cell'>
+    <text class='title'>{{'姓名'}}</text>
+    <input class='input' bindinput='inputChange' placeholder-class='placeholder-class' auto-height='true' placeholder='请输入{{title}}' value="{{text}}" type='{{keyBoardType}}' />
+  </view>
+  <view class='sep-line' />
   <view class='cell'>
     <text class='title'>{{'电话'}}</text>
-    <input class='input' bindinput='inputChange' placeholder-class='placeholder-class' auto-height='true' placeholder='请输入{{title}}' value="{{text}}" type='{{keyBoardType}}'  />
+    <input class='input' bindinput='inputChange' placeholder-class='placeholder-class' auto-height='true' placeholder='请输入{{title}}' value="{{text}}" type='{{keyBoardType}}' />
   </view>
-  <view class='sep-line'/>
+  <view class='sep-line' />
   <view class='cell'>
     <text class='title'>{{'人数'}}</text>
-    <input class='input' bindinput='inputChange' placeholder-class='placeholder-class' auto-height='true' placeholder='请输入{{title}}' value="{{text}}" type='{{keyBoardType}}'  />
+    <input class='input' bindinput='inputChange' placeholder-class='placeholder-class' auto-height='true' placeholder='请输入{{title}}' value="{{text}}" type='{{keyBoardType}}' />
   </view>
-  <view class='sep-line'/>
+  <view class='sep-line' />
+  </view>
+  <button class='blessButton'>送上最美好的祝福</button>
 </view>

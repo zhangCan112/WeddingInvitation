@@ -8,9 +8,9 @@
     "pages/photo/photo"
   ],
   "window": {
-    "backgroundColor": "#FFC0CB",
+    "backgroundColor": "#FFFFFF",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#FFC0CB",
+    "navigationBarBackgroundColor": "#FFFFFF",
     "navigationBarTitleText": "CL之恋",
     "navigationBarTextStyle": "black"
   },
@@ -18,7 +18,7 @@
     "color": "#97A9B8",
     "selectedColor": "#3DA0F2",
     "borderStyle": "#CCD6DD",
-    "backgroundColor": "#FFC0CB",
+    "backgroundColor": "#FFFFFF",
     "list": [
       {
         "pagePath": "pages/photo/photo",

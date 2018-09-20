@@ -76,6 +76,16 @@ Page({
  * 点击「登录」按钮，测试登录功能
  */
   getUserInfo: function (e) {
+
+    let appinstance = getApp();
+    if (e && e.detail && !e.detail.rawData) {            
+      return;
+    }
+
+    if (this.data.isLoading == true) {
+      return
+    }
+
     this.setData({
       isLoading: true,
     })
