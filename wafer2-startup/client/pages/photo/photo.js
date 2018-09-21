@@ -45,7 +45,7 @@ Page({
       success(result) {        
         console.log('request success', result);
         let blesses = result.data.data.map((info)=>{
-          return `${info.bless}——${info.name}`
+          return `${info.name}：${info.bless}`
         })
         that.setData({
           blesses
