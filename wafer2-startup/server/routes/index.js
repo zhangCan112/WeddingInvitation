@@ -35,7 +35,7 @@ router.get('/blesses', controllers.bless.all)
 
 // --- 留下参加婚礼的宾客信息 --- //
 //name, phone, guest_num必填
-router.post('/guest', validationMiddleware, post('name', 'phone', 'guest_num'), controllers.guest.post)
+router.post('/guest', validationMiddleware, post('bless', 'name', 'phone', 'guest_num'),controllers.bless.post, controllers.guest.post)
 
 
 module.exports = router

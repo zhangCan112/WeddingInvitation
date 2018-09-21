@@ -7,6 +7,7 @@ const post = async (ctx, next) => {
         let bless = ctx.request.body['bless']
        await dbservice.addBlessInfo(userInfo.openId, userInfo.nickName, bless)
     }
+    return await next()
 }
 
 const all = async (ctx, next) => {

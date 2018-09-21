@@ -37,7 +37,7 @@ Component({
    */
   properties: {
     barrageContents: {
-      type: String,
+      type: Array,
       value: ['百年好合', '新婚快乐']
     }
   },
@@ -64,7 +64,7 @@ Component({
       that.pushBarrage(that.data.barrageContents[that.data.num % that.data.barrageContents.length])
       let num = that.data.num + 1
       that.setData({ num })
-    }, 200)
+    }, 1000)
   },
 
   /**
