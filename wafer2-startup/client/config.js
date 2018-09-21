@@ -24,6 +24,9 @@ var config = {
     blessesUrl: `${host}/weapp/blesses`,
     // 参加婚礼的宾客信息接口（post）
     guestUrl: `${host}/weapp/guest`,
+    //相册（get）
+    photosUrl: `${host}/weapp/photos`,
+    
   }
 };
 

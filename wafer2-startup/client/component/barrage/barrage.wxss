@@ -2,9 +2,24 @@
 
 
 .button{
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+  height: 80rpx;
+  width: 80rpx;
+  border-radius: 100%;
+  position: fixed;
+  bottom: 20px;
+  right: 20rpx;
+  display: flex;
+  background: #4F80FE;
+  align-items: center;
+  justify-content: center;
+  z-index: 9;
+}
+
+.text-ver {
+  font-family: PingFangSC-Regular;
+  font-size: 20px;
+  color: #fff;
+  letter-spacing: 0;
 }
 
 .doommview{

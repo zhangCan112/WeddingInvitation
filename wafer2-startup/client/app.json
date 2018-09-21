@@ -27,16 +27,16 @@
         "text": "相册"
       },
       {
-        "pagePath": "pages/hotelNavigation/hotelNavigation",
-        "iconPath": "imageAsset/icon_near_store.png",
-        "selectedIconPath": "imageAsset/icon_near_store_HL.png",
-        "text": "酒店导航"
-      },
-      {
         "pagePath": "pages/bless/bless",
         "iconPath": "imageAsset/icon_me.png",
         "selectedIconPath": "imageAsset/icon_me_HL.png",
         "text": "留下祝福"
+      },
+      {
+        "pagePath": "pages/hotelNavigation/hotelNavigation",
+        "iconPath": "imageAsset/icon_near_store.png",
+        "selectedIconPath": "imageAsset/icon_near_store_HL.png",
+        "text": "酒店导航"
       }
     ]
   }

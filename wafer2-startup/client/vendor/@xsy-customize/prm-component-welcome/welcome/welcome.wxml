@@ -2,11 +2,11 @@
 <swiper class="swiper-default swiper-class" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
   <block wx:for="{{imageUrls}}" wx:key="index">
     <swiper-item>
-      <view class="swiper-default swiper-class" style="background-image: url({{item}});background-size:100vw 100vh;">
+      <image class="swiper-default swiper-class" src='{{item}}'mode='aspectFit' animation='{{animationData}}'>
         <view wx:if="{{index == imageUrls.length-1}}">
           <slot></slot>
         </view>
-      </view>
+      </image>
     </swiper-item>
   </block>
 </swiper>

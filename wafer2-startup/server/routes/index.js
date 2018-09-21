@@ -31,7 +31,10 @@ router.post('/upload', controllers.upload)
 router.post('/bless', validationMiddleware, post('bless'), controllers.bless.post)
 
 // --- 获取所有弹幕祝福信息 --- //
-router.get('/blesses', controllers.bless.all)
+router.get('/blesses', validationMiddleware, controllers.bless.all)
+
+// --- 获取相册 --- //
+router.get('/photos', validationMiddleware, controllers.photo.all)
 
 // --- 留下参加婚礼的宾客信息 --- //
 //name, phone, guest_num必填

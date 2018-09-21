@@ -33,8 +33,8 @@
 			"list": [
 				{
 					"id": 0,
-					"name": "bless",
-					"pathName": "pages/bless/bless",
+					"name": "photo",
+					"pathName": "pages/photo/photo",
 					"query": ""
 				}
 			]

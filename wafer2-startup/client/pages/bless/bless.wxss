@@ -1,7 +1,9 @@
 /* client/pages/bless/bless.wxss */
 
 .container {
-  background-image: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1537360701616&di=704e81beeee5539aa726fd78f80bd40b&imgtype=0&src=http%3A%2F%2Fpic35.photophoto.cn%2F20150526%2F0037037523756855_b.jpg);background-size:100vw 100vh;
+  background-image: url(https://weddinginvitation-1257005404.cos.ap-beijing.myqcloud.com/WechatIMG721.jpeg);
+  background-repeat: repeat-y;
+  background-size:contain;
   height: 100vh;
   display:  flex;
   flex-direction: column;
@@ -75,7 +77,7 @@
 }
 
 .blessButton {
-  margin-top: 30px;
+  margin-top: 10px;
   background: #2393FF;
   color: #FFFFFF;
 }

@@ -46,7 +46,8 @@ Component({
    */
   data: {
     doommData: [],
-    num: 0,    
+    num: 0,
+    isDisplay: true,    
   },
 
   /**
@@ -77,5 +78,11 @@ Component({
         doommData: doommList
       })
     },
+    barrageControl: function(e) {
+      let isDisplay = !this.data.isDisplay
+      this.setData({
+        isDisplay
+      })
+    }
   }
 })
