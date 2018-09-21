@@ -1,4 +1,7 @@
 // vendor/@xsy-customize/prm-component-welcome/welcome/welcome.js
+
+const random = require('./random.js')
+
 Component({
   /**
    * 组件的属性列表
@@ -14,7 +17,7 @@ Component({
     },
     interval:{
       type: Number,
-      value: 3000
+      value: 4000
     },
     duration: {
       type: Number,
@@ -35,30 +38,32 @@ Component({
   },
 
   ready: function(){
-    var animation = wx.createAnimation({
-      duration: 1000,
-      timingFunction: 'ease',
-    })
-
-    this.animation = animation
-
-    animation.scale(2, 2).rotate(45).step()
-    this.setData({
-      animationData: animation.export()
-    })
-
-    setInterval(function () {
-      animation.translate(30).step()
-      this.setData({
-        animationData: animation.export()
-      })
-    }.bind(this), 1000)
   },
 
   /**
    * 组件的方法列表
    */
   methods: {
-    
+    itemChange: function(){
+      var animation = wx.createAnimation({
+        duration: 1000,
+        timingFunction: 'ease-in',   
+        transformOrigin: random.transformOrigin(),            
+      })
+      
+      this.animation = animation 
+      animation = random.scale(animation)     
+      animation = random.translate(animation)     
+      animation = random.skew(animation)           
+      animation.step()
+      animation.rotate(0, 0)
+        .scale(1)
+        .translate(0, 0)
+        .skew(0, 0)
+        .step({ duration: 1000 })
+      this.setData({
+        animationData: animation.export()
+      })           
+    }
   }
 })

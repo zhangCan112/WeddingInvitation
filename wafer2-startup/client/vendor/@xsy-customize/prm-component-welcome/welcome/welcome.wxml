@@ -1,5 +1,5 @@
 <!--vendor/@xsy-customize/prm-component-welcome/welcome/welcome.wxml-->
-<swiper class="swiper-default swiper-class" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+<swiper class="swiper-default swiper-class" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange='itemChange'>
   <block wx:for="{{imageUrls}}" wx:key="index">
     <swiper-item>
       <image class="swiper-default swiper-class" src='{{item}}'mode='aspectFit' animation='{{animationData}}'>
