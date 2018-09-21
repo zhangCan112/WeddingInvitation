@@ -26,7 +26,7 @@ Component({
     imageUrls:{
       type: Array,
       value: []
-    }
+    },    
   },
   
   externalClasses: ['swiper-class'],
@@ -34,7 +34,8 @@ Component({
    * 组件的初始数据
    */
   data: {
-    animationData:{}
+    animationData:{},
+    vertical: false
   },
 
   ready: function(){
@@ -62,6 +63,7 @@ Component({
         .skew(0, 0)
         .step({ duration: 1000 })
       this.setData({
+        vertical: random.vertical(),
         animationData: animation.export()
       })           
     }

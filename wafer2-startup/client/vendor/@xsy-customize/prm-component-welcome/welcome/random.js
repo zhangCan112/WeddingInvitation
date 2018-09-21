@@ -33,10 +33,15 @@ const skew = function (animation) {
   return animation
 }
 
+const vertical = function () {
+  return Math.ceil(Math.random * 10) % 2 == 0
+}
+
 
 module.exports = {
   transformOrigin,
   scale,
   skew,
-  translate
+  translate,
+  vertical
 }
