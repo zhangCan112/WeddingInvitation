@@ -3,7 +3,9 @@
  */
 
 // 此处主机域名修改成腾讯云解决方案分配的域名
-var host = 'https://fnkrizqg.qcloud.la';
+// var host = 'https://fnkrizqg.qcloud.la';
+//生产环境
+var host = 'https://270964526.lovebean.xyz'
 
 var config = {
 
