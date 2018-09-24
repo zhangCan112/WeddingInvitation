@@ -46,7 +46,7 @@ Page({
       height: 47,
       iconPath: '/imageAsset/icon_location01.png',
       callout: {
-        content: '君越酒店',
+        content: '10月1日欢迎您来参加我们的婚礼',
         fontSize: 14,
         color: '#FFFFFF',
         bgColor: '#5BCCED',
@@ -56,7 +56,7 @@ Page({
         textAlign: 'left'
       },
       label: {
-        content: '君越酒店',
+        content: '宝鸡市君越酒店',
         fontSize: 14,
         color: '#black',
         textAlign: 'center',

@@ -1,0 +1,46 @@
+/* client/pages/welome1/welcome1.wxss */
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hoop {
+  width: 267px;
+  height: 263px;
+  position: relative;
+  animation: App-logo-spin infinite 40s linear;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+  color: white;
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background-image: linear-gradient(-154deg, #e61d39 9%, #ffa88c 99%);
+  border-radius: 50%;
+  box-shadow: 0 2px 16px 0 rgba(245,0,0,0.50);
+}
+
+.title {
+  font-size: 25px;
+  line-height: 26px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

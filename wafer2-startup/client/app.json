@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/welome1/welcome1",
     "pages/welcome/welcome",
     "pages/index/index",
     "pages/hotelNavigation/hotelNavigation",
@@ -16,7 +17,7 @@
   },
   "tabBar": {
     "color": "#97A9B8",
-    "selectedColor": "#3DA0F2",
+    "selectedColor": "#FF1493",
     "borderStyle": "#CCD6DD",
     "backgroundColor": "#FFFFFF",
     "list": [

@@ -1,8 +1,10 @@
 <!--client/pages/bless/bless.wxml-->
+    <image class='image' src='/imageAsset/bg_bless_top.png' mode='widthFix'/>
+    <image class='image' src='/imageAsset/bg_bless_name.png' mode='widthFix'/>
 <form bindsubmit='submit'>
   <view class='container'>
     <view class='areaContainer'>
-      <textarea class='blessArea' name='bless' placeholder="一定要祝福一下张灿和豆小丽呀！" maxlength='500' auto-height='true' />
+      <textarea class='blessArea' name='bless' placeholder="来祝福我们吧" maxlength='500' auto-height='true' />
     </view>
     <view class='switchButton' bindtap='switchMethod'>{{canOnScence ? '不能亲至,亲要见谅哦=。=' : 'Hi,我要参加婚礼!'}}</view>
     <view wx:if='{{canOnScence}}'>
@@ -22,6 +24,7 @@
       </view>
       <view class='sep-line' />
     </view>
-    <button class='blessButton' form-type='submit' loading='{{isLoading}}'>送上最美好的祝福</button>
+    <button class='blessButton' form-type='submit' loading='{{isLoading}}'>提交祝福</button>
   </view>
 </form>
+        <image class='image' src='/imageAsset/bg_bless_bottom.png ' mode='widthFix'/>

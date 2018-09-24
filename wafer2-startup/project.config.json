@@ -12,6 +12,7 @@
 	},
 	"appid": "wx5d389cfb027024bd",
 	"projectname": "%E5%A9%9A%E7%A4%BC%E9%82%80%E8%AF%B7%E5%87%BD",
+	"compileType": "miniprogram",
 	"condition": {
 		"search": {
 			"current": -1,
@@ -33,8 +34,8 @@
 			"list": [
 				{
 					"id": 0,
-					"name": "photo",
-					"pathName": "pages/photo/photo",
+					"name": "bless",
+					"pathName": "pages/bless/bless",
 					"query": ""
 				}
 			]
