@@ -3,6 +3,12 @@
 const all = async (ctx, next) => {
   if (ctx.state.$wxInfo.loginState) {
     ctx.state.data = [
+      'https://weddinginvitation-1257005404.cos.ap-beijing.myqcloud.com/33.png',
+      'https://weddinginvitation-1257005404.cos.ap-beijing.myqcloud.com/34.png',
+      'https://weddinginvitation-1257005404.cos.ap-beijing.myqcloud.com/35.png',
+      'https://weddinginvitation-1257005404.cos.ap-beijing.myqcloud.com/36.png',
+      'https://weddinginvitation-1257005404.cos.ap-beijing.myqcloud.com/37.png',
+      'https://weddinginvitation-1257005404.cos.ap-beijing.myqcloud.com/38.png',
       'https://weddinginvitation-1257005404.cos.ap-beijing.myqcloud.com/1.png',
       'https://weddinginvitation-1257005404.cos.ap-beijing.myqcloud.com/2.png',
       'https://weddinginvitation-1257005404.cos.ap-beijing.myqcloud.com/3.png',
@@ -35,12 +41,6 @@ const all = async (ctx, next) => {
       'https://weddinginvitation-1257005404.cos.ap-beijing.myqcloud.com/30.png',
       'https://weddinginvitation-1257005404.cos.ap-beijing.myqcloud.com/31.png',
       'https://weddinginvitation-1257005404.cos.ap-beijing.myqcloud.com/32.png',
-      'https://weddinginvitation-1257005404.cos.ap-beijing.myqcloud.com/33.png',
-      'https://weddinginvitation-1257005404.cos.ap-beijing.myqcloud.com/34.png',
-      'https://weddinginvitation-1257005404.cos.ap-beijing.myqcloud.com/35.png',
-      'https://weddinginvitation-1257005404.cos.ap-beijing.myqcloud.com/36.png',
-      'https://weddinginvitation-1257005404.cos.ap-beijing.myqcloud.com/37.png',
-      'https://weddinginvitation-1257005404.cos.ap-beijing.myqcloud.com/38.png',
       'https://weddinginvitation-1257005404.cos.ap-beijing.myqcloud.com/39.png',
       'https://weddinginvitation-1257005404.cos.ap-beijing.myqcloud.com/40.png',
       'https://weddinginvitation-1257005404.cos.ap-beijing.myqcloud.com/41.png',
