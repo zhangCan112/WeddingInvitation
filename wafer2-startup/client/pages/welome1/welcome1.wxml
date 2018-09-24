@@ -1,7 +1,9 @@
 <!--client/pages/welome1/welcome1.wxml-->
 <view class='container'>
   <image src='/imageAsset/bg_floral_hoop.png' class='hoop' />
-  <button class='button' open-type="getUserInfo" bindgetuserinfo="getUserInfo" loading='{{isLoading}}'>
-    <text class='title'>{{'进去\n看看'}}</text>
-  </button>
+  <view class='buttonContainer'>
+    <button class='button' open-type="getUserInfo" bindgetuserinfo="getUserInfo" loading='{{isLoading}}'>
+      <text class='title'>{{'进去\n看看'}}</text>
+    </button>    
+  </view>
 </view>

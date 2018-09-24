@@ -11,7 +11,7 @@ const post = async (ctx, next) => {
 }
 
 const all = async (ctx, next) => {
-  let blesses = await dbservice.querryAllBlessInfo()
+  let blesses = await dbservice.querryAllBlessInfo()  
   ctx.state.data = blesses
 }
 

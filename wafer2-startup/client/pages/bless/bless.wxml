@@ -4,7 +4,7 @@
 <form bindsubmit='submit'>
   <view class='container'>
     <view class='areaContainer'>
-      <textarea class='blessArea' name='bless' placeholder="来祝福我们吧" maxlength='500' auto-height='true' />
+      <textarea class='blessArea' name='bless' placeholder="请祝福我们吧" maxlength='500' auto-height='true' />
     </view>
     <view class='switchButton' bindtap='switchMethod'>{{canOnScence ? '不能亲至,亲要见谅哦=。=' : 'Hi,我要参加婚礼!'}}</view>
     <view wx:if='{{canOnScence}}'>
