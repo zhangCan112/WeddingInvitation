@@ -11,7 +11,7 @@ Page = function(options) {
     return {
       title: '欢迎您参加张灿和豆小丽的婚礼',
       path: `/pages/welcome/welcome`,
-      imageUrl: 'https://weddinginvitation-1257005404.cos.ap-beijing.myqcloud.com/WechatIMG708.jpeg'
+      imageUrl: 'https://weddinginvitation-1257005404.cos.ap-beijing.myqcloud.com/WechatIMG700.jpeg'
     }
   }
   page(options)

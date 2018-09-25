@@ -46,26 +46,26 @@ Component({
    */
   methods: {
     itemChange: function(){
-      var animation = wx.createAnimation({
-        duration: 1000,
-        timingFunction: 'ease-in',   
-        transformOrigin: random.transformOrigin(),            
-      })
+      // var animation = wx.createAnimation({
+      //   duration: 1000,
+      //   timingFunction: 'ease-in',   
+      //   transformOrigin: random.transformOrigin(),            
+      // })
       
-      this.animation = animation 
-      animation = random.scale(animation)     
-      animation = random.translate(animation)     
-      animation = random.skew(animation)           
-      animation.step()
-      animation.rotate(0, 0)
-        .scale(1)
-        .translate(0, 0)
-        .skew(0, 0)
-        .step({ duration: 1000 })
-      this.setData({
-        vertical: random.vertical(),
-        animationData: animation.export()
-      })           
+      // this.animation = animation 
+      // animation = random.scale(animation)     
+      // animation = random.translate(animation)     
+      // animation = random.skew(animation)           
+      // animation.step()
+      // animation.rotate(0, 0)
+      //   .scale(1)
+      //   .translate(0, 0)
+      //   .skew(0, 0)
+      //   .step({ duration: 1000 })
+      // this.setData({
+      //   vertical: random.vertical(),
+      //   animationData: animation.export()
+      // })           
     }
   }
 })

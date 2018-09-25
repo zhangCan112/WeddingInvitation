@@ -20,8 +20,8 @@ SET FOREIGN_KEY_CHECKS = 0;
 -- ----------------------------
 --  Table structure for `cSessionInfo`
 -- ----------------------------
-DROP TABLE IF EXISTS `cSessionInfo`;
-CREATE TABLE `cSessionInfo` (
+-- DROP TABLE IF EXISTS `cSessionInfo`;
+CREATE TABLE IF NOT EXISTS `cSessionInfo` (
   `open_id` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `uuid` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `skey` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -34,8 +34,8 @@ CREATE TABLE `cSessionInfo` (
   KEY `skey` (`skey`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='会话管理用户信息';
 
-DROP TABLE IF EXISTS `guest_info`;
-CREATE TABLE `guest_info` (
+-- DROP TABLE IF EXISTS `guest_info`;
+CREATE TABLE IF NOT EXISTS `guest_info` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `open_id` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `name` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -46,8 +46,8 @@ CREATE TABLE `guest_info` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
-DROP TABLE IF EXISTS `bless`;
-CREATE TABLE `bless` (
+-- DROP TABLE IF EXISTS `bless`;
+CREATE TABLE IF NOT EXISTS `bless` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `open_id` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `name` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
